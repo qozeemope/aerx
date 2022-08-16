@@ -20,6 +20,7 @@ function App() {
         height="478px"
         marginLeft="0"
         borderTopEndRadius="50px"
+        borderBottomEndRadius="50px"
         zIndex="-1"
       >
         <Center>
@@ -79,12 +80,13 @@ function App() {
       <Box
         position="absolute"
         top="120px"
-        mt="32px"
+        marginTop="32px"
         bgColor="#282828;"
-        maxWidth="376px"
-        maxHeight="358px"
+        width="376px"
+        height="358px"
         marginLeft="0"
         borderTopEndRadius="50px"
+        borderBottomEndRadius="50px"
         zIndex="2"
       >
         <Center>
@@ -109,87 +111,22 @@ function App() {
           </Flex>
         </Flex>
         <Carousel
-          mt="20px"
+          marginTop="20px"
           overflow="hidden"
-          // position="absolute"
-          // top="64px"
-          // left="24px"
-          marginBottom="24px"
+          marginBottom="34px"
+          position="absolute"
+          top="64px"
+          left="24px"
+          showArrows={true}
+          showStatus={false}
+          swipeable={true}
+          infiniteLoop={true}
+          // centerMode={true}
+          // centerSlidePercentage="100%"
+          showIndicators={false}
         >
           <Box marginRight="16px" position="relative">
-            <Flex position="absolute" left={43} top={39}>
-              <Image src={'Ticket Star.png'} />
-              <Text
-                fontWeight="400"
-                fontSize="16px"
-                color="#ffffff"
-                position="absolute"
-                marginLeft="32px"
-              >
-                Ticket
-              </Text>
-            </Flex>
-            <Text
-              position="absolute"
-              color="#ffffff"
-              top={71}
-              left={25}
-              fontSize="18px"
-              fontWeight={600}
-            >
-              NFT Name
-            </Text>
-            <Text
-              position="absolute"
-              top="93px"
-              left="38px"
-              color="#ffffff"
-              fontWeight={400}
-              fontSize="16px"
-            >
-              24,6 aex
-            </Text>
-            <Image src={'Rectangle 3421.png'} maxWidth="140px" height="149px" />
-          </Box>
-
-          <Box marginRight="16px" position="relative">
-            <Flex position="absolute" left={43} top={39}>
-              <Image src={'Fill 1.png'} />
-              <Text
-                fontWeight="400"
-                fontSize="16px"
-                color="#ffffff"
-                position="absolute"
-                marginLeft="32px"
-              >
-                Ticket
-              </Text>
-            </Flex>
-            <Text
-              position="absolute"
-              color="#ffffff"
-              top={71}
-              left={25}
-              fontSize="18px"
-              fontWeight={600}
-            >
-              NFT Name
-            </Text>
-            <Text
-              position="absolute"
-              top="93px"
-              left="38px"
-              color="#ffffff"
-              fontWeight={400}
-              fontSize="16px"
-            >
-              24,6 aex
-            </Text>
-            <Image src={'Rectangle 3527.png'} maxWidth="140px" height="149px" />
-          </Box>
-
-          <Box marginRight="16px" position="relative">
-            <Flex position="absolute" left={43} top={39}>
+            <Flex position="absolute" left={150} top={39}>
               <Image src={'Ticket Star.png'} />
               <Text
                 fontWeight="400"
@@ -205,7 +142,7 @@ function App() {
               position="absolute"
               color="#ffffff"
               top={71}
-              left={25}
+              left={135}
               fontSize="18px"
               fontWeight={600}
             >
@@ -214,7 +151,79 @@ function App() {
             <Text
               position="absolute"
               top="93px"
-              left="38px"
+              left="148px"
+              color="#ffffff"
+              fontWeight={400}
+              fontSize="16px"
+            >
+              24,6 aex
+            </Text>
+            <Image src={'Rectangle 3421.png'} maxWidth="140px" height="149px" />
+          </Box>
+
+          <Box marginRight="16px" position="relative">
+            <Flex position="absolute" left={143} top={39}>
+              <Image src={'Fill 1.png'} />
+              <Text
+                fontWeight="400"
+                fontSize="16px"
+                color="#ffffff"
+                position="absolute"
+                marginLeft="32px"
+              >
+                Ticket
+              </Text>
+            </Flex>
+            <Text
+              position="absolute"
+              color="#ffffff"
+              top={71}
+              left={135}
+              fontSize="18px"
+              fontWeight={600}
+            >
+              NFT Name
+            </Text>
+            <Text
+              position="absolute"
+              top="93px"
+              left="148px"
+              color="#ffffff"
+              fontWeight={400}
+              fontSize="16px"
+            >
+              24,6 aex
+            </Text>
+            <Image src={'Rectangle 3527.png'} maxWidth="140px" height="149px" />
+          </Box>
+
+          <Box marginRight="16px" position="relative">
+            <Flex position="absolute" left={150} top={39}>
+              <Image src={'Ticket Star.png'} />
+              <Text
+                fontWeight="400"
+                fontSize="16px"
+                color="#ffffff"
+                position="absolute"
+                marginLeft="32px"
+              >
+                Art
+              </Text>
+            </Flex>
+            <Text
+              position="absolute"
+              color="#ffffff"
+              top={71}
+              left={135}
+              fontSize="18px"
+              fontWeight={600}
+            >
+              NFT Name
+            </Text>
+            <Text
+              position="absolute"
+              top="93px"
+              left="148px"
               color="#ffffff"
               fontWeight={400}
               fontSize="16px"
@@ -228,7 +237,7 @@ function App() {
       <Box
         position="absolute"
         top="365px"
-        mt="60px"
+        marginTop="32px"
         bgColor="#303030;"
         width="376px"
         height="112px"
