@@ -8,16 +8,8 @@ import {
   Flex,
   Center,
 } from '@chakra-ui/react';
-// import Carousel from 'react-multi-carousel';
-// import 'react-multi-carousel/lib/styles.css';
-
-// const responsive = {
-//   mobile: {
-//     breakpoint: { max: 464, min: 0 },
-//     items: 1,
-//     slidesToSlide: 1,
-//   },
-// };
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function App() {
   return (
@@ -116,7 +108,14 @@ function App() {
             <Image src={'Rectangle 3407.png'} alt="" w="8px" h="8px" />
           </Flex>
         </Flex>
-        <Flex mt="20px" ml="24px" overflow="hidden">
+        <Carousel
+          mt="20px"
+          overflow="hidden"
+          // position="absolute"
+          // top="64px"
+          // left="24px"
+          marginBottom="24px"
+        >
           <Box marginRight="16px" position="relative">
             <Flex position="absolute" left={43} top={39}>
               <Image src={'Ticket Star.png'} />
@@ -127,7 +126,7 @@ function App() {
                 position="absolute"
                 marginLeft="32px"
               >
-                Art
+                Ticket
               </Text>
             </Flex>
             <Text
@@ -224,7 +223,7 @@ function App() {
             </Text>
             <Image src={'Rectangle 3421.png'} maxWidth="140px" height="149px" />
           </Box>
-        </Flex>
+        </Carousel>
       </Box>
       <Box
         position="absolute"
